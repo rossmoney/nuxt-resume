@@ -100,7 +100,7 @@ const config = {
         class: 'do-not-strip',
       },
       {
-        src: 'https://www.google-analytics.com/analytics.js',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-JFS5X8K2C5',
         async: true,
         body: true,
         class: 'do-not-strip',
