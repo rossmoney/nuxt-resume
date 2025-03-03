@@ -40,6 +40,57 @@ const getWorkInfo = (resumeData, filterFn) => {
 };
 
 /**
+ * Filters and formats awards from resume data.
+ *
+ * @param {Object} resumeData - The resume data containing awards.
+ * @param {Function} filterFn - The filter function to apply on awards.
+ * @returns {Array<Object>} The filtered and formatted awards.
+ */
+const getFilteredAwards = (resumeData, filterFn) => {
+  return resumeData.awards.filter(filterFn).map(a => ({
+    ...a,
+    title: a.title,
+    subtitle: `${formatDate(a.date)} | ${a.awarder}`,
+  }));
+};
+
+/**
+ * Retrieves all awards from the resume data.
+ *
+ * @param {Object} resumeData - The resume data object containing various information.
+ * @returns {Array} An array of awards.
+ */
+export const getAwards = resumeData => {
+  return getFilteredAwards(resumeData, a => true);
+};
+
+/**
+ * Filters and transforms the certificates from the resume data.
+ *
+ * @param {Object} resumeData - The resume data containing certificates.
+ * @param {Function} filterFn - The filter function to apply on certificates.
+ * @returns {Array<Object>} The filtered and transformed certificates.
+ */
+const getFilteredCertificates = (resumeData, filterFn) => {
+  return resumeData.certificates.filter(filterFn).map(c => ({
+    ...c,
+    title: c.name,
+    subtitle: `${formatDate(c.date)} | ${c.issuer}`,
+    website: c.url,
+  }));
+};
+
+/**
+ * Retrieves all certificates from the resume data.
+ *
+ * @param {Object} resumeData - The resume data containing certificates.
+ * @returns {Array} An array of all certificates.
+ */
+export const getCertificates = resumeData => {
+  return getFilteredCertificates(resumeData, c => true);
+};
+
+/**
  * Transforms any full-time work info in the resume JSON data
  * into an array of section objects usable by `Content.vue`.
  * @param {Object} resumeData The resume data to search

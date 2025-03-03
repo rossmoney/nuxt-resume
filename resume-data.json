@@ -103,6 +103,10 @@
           "website": "https://www.terraform.io/"
         },
         {
+          "display": "AWS",
+          "website": "https://aws.amazon.com/"
+        },
+        {
           "display": "SCSS",
           "website": "https://sass-lang.com/"
         },
@@ -196,6 +200,13 @@
       ]
     },
     {
+      "company": "Travelling",
+      "summary": "Travel around Asia with a focus on the SE Asian countries, Korea and Japan.",
+      "position": "Career Break",
+      "startDate": "2015-12-20",
+      "endDate": "2016-08-05"
+    },
+    {
       "company" : "Fusepump Ltd.",
       "position" : "LAMP PHP Developer",
       "startDate" : "2014-01-01",
@@ -206,17 +217,6 @@
         "Worked in an Agile environment using JIRA for project management.",
         "Used Linux command line for web scraping framework testing.",
         "Developed internal admin tools using Zend Framework."
-      ]
-    },
-    {
-      "company": "Travelling",
-      "website": "",
-      "summary": "Travel around Asia with a focus on the SE Asian countries, Korea and Japan.",
-      "position": "Career Break",
-      "startDate": "2015-12-20",
-      "endDate": "2016-08-05",
-      "type": "internship",
-      "tags": [
       ]
     }
   ],
@@ -236,6 +236,21 @@
       "endDate": "2013-06-10",
       "area": "Computing",
       "studyType": "Bachelor"
+    }
+  ],
+  "awards" : [
+    {
+      "title" : "V-Volunteering Award for 50 hours Volunteering",
+      "date" : "2009-08-01",
+      "awarder" : "The Edge Brixham"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "date" : "2022-10-01",
+      "url" : "https://www.credly.com/badges/19f5d9a5-c119-49fb-913d-2e079c4376c7",
+      "issuer": "Pearson"
     }
   ],
   "skills": [
@@ -292,10 +307,13 @@
     {
       "name": "Concepts",
       "keywords": [
-        "AGILE working / philosophy",
+        "Infrastructure as Code (IAC)",
+        "Cross Functional Teams",
+        "Agile Development & Scrum",
         "Continuous integration/deployment (CI/CD)",
+        "OOP + Design Patterns",
         "REST API design",
-        "BDD/ TDD",
+        "Test-Driven Development",
         "Cross-browser debugging",
         "Responsive design",
         "Developer workflow optimization"

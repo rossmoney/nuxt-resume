@@ -102,8 +102,16 @@ export default {
               subsections: helpers.getSkillsInfo(this.resumeData),
             },
             {
-              title: 'Internships/Part-time',
+              title: 'Other Experience',
               subsections: helpers.getOtherWorkInfo(this.resumeData),
+            },
+            {
+              title: 'Awards',
+              subsections: helpers.getAwards(this.resumeData),
+            },
+            {
+              title: 'Certificates',
+              subsections: helpers.getCertificates(this.resumeData),
             },
           ],
         },
