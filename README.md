@@ -1,16 +1,13 @@
 # Nuxt Résumé
 
-<a href="https://gitlab.com/nfriend/nuxt-resume/pipelines/latest"
-  target="_blank"><img
-  src="https://gitlab.com/nfriend/nuxt-resume/badges/master/pipeline.svg"
-  alt="GitLab build status"></a>
+![GitHub Actions build status](https://github.com/rossmoney/nuxt-resume/actions/workflows/CI.yml/badge.svg)
 
 My résumé, built with [NuxtJS](https://nuxtjs.org/guide/installation) and
-[Tailwind CSS](https://tailwindcss.com/): https://resume.nathanfriend.io (or
+[Tailwind CSS](https://tailwindcss.com/): https://www.rossmoney.me (or
 [view as a
-PDF](https://resume.nathanfriend.io/Nathan%20Friend%20-%20R%C3%A9sum%C3%A9.pdf))
+PDF](https://www.rossmoney.me/Ross%20Money%20-%20R%C3%A9sum%C3%A9.pdf))
 
-![A screenshot of my resume](https://resume.nathanfriend.io/screenshot.png)
+![A screenshot of my resume](https://www.rossmoney.me/screenshot.png)
 
 ## Data
 
@@ -36,13 +33,12 @@ Template](https://universal-resume-pages.netlify.com/).
 
 As part of the CI pipeline, a `resume.json` file that conforms to the
 [`resume.json` schema](https://jsonresume.org/schema/) is extracted from
-[`resume-data.json`](./resume-data.json) and automatically pushed to a [GitLab
-Snippet](https://gitlab.com/snippets/1948091) and a [GitHub
-Gist](https://gist.github.com/nfriend/36d83b1526df75a663d9c3ad0b1cd630). The
+[`resume-data.json`](./resume-data.json) and automatically pushed to a [GitHub
+Gist](https://gist.github.com/rossmoney/2d5585729373bcc933c34d8e5c28a0b2). The
 [`ci/generate-resume.json.js`](./ci/generate-resume.json.js) script is
 responsible for this work.
 
-You can view the rendered result at https://registry.jsonresume.org/nfriend.
+You can view the rendered result at https://registry.jsonresume.org/rossmoney.
 
 ## Generating a résumé locally
 

@@ -16,7 +16,7 @@ const puppeteer = require('puppeteer');
     deviceScaleFactor: 1,
   });
 
-  await page.goto(`file://${process.env.CI_PROJECT_DIR}/dist/index.html`, {
+  await page.goto(`file://${path.resolve(__dirname, '../dist/index.html')}`, {
     waitUntil: 'networkidle0',
   });
 

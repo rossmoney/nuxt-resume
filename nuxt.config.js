@@ -10,14 +10,14 @@ const config = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Nathan Friend - Résumé',
+    title: 'Ross Money - Résumé',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: "Nathan Friend's résumé. Built with NuxtJS and Tailwind CSS.",
+        content: "Ross Money's résumé. Built with NuxtJS and Tailwind CSS.",
       },
       {
         property: 'og:type',
@@ -25,16 +25,16 @@ const config = {
       },
       {
         property: 'og:title',
-        content: 'Nathan Friend - Résumé',
+        content: 'Ross Money - Résumé',
       },
       {
         property: 'og:description',
-        content: "Nathan Friend's résumé. Built with NuxtJS and Tailwind CSS.",
+        content: "Ross Money's résumé. Built with NuxtJS and Tailwind CSS.",
       },
-      {
-        property: 'og:image',
-        content: 'https://resume.nathanfriend.io/screenshot.png',
-      },
+      //{
+      //  property: 'og:image',
+      //  content: 'https://www.rossmoney.me/screenshot.png',
+      //},
       {
         property: 'og:image:type',
         content: 'image/png',
@@ -140,13 +140,13 @@ const config = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-  },
-  env: {
-    isProduction: Boolean(process.env.CI),
-    gitlabCi: {
+    },
+    env: {
+    isProduction: Boolean(process.env.GITHUB_ACTIONS),
+    githubActions: {
       timestamp: new Date().toISOString(),
-      projectUrl: process.env.CI_PROJECT_URL,
-      commitSha: process.env.CI_COMMIT_SHORT_SHA,
+      repositoryUrl: process.env.GITHUB_REPOSITORY,
+      commitSha: process.env.GITHUB_SHA,
     },
 
     // // comment above and uncomment below
@@ -154,7 +154,7 @@ const config = {
     // isProduction: true,
     // gitlabCi: {
     //   timestamp: new Date().toISOString(),
-    //   projectUrl: 'https://gitlab.com/nfriend/nuxt-resume',
+    //   projectUrl: 'https://github.com/rossmoney/nuxt-resume',
     //   commitSha: 'c6d21f92',
     // },
   },

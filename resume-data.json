@@ -1,122 +1,110 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Nathan Friend",
+    "name": "Ross Money",
     "nameKerned": [
-      { "character": "N", "letterSpacing": "-0.08em" },
-      { "character": "a", "letterSpacing": "-0.07em" },
-      { "character": "t", "letterSpacing": "-0.01em" },
-      { "character": "h", "letterSpacing": "-0.05em" },
-      { "character": "a", "letterSpacing": "-0.04em" },
-      { "character": "n", "letterSpacing": "-0.05em" },
+      { "character": "R", "letterSpacing": "-0.08em" },
+      { "character": "o", "letterSpacing": "-0.07em" },
+      { "character": "s", "letterSpacing": "-0.01em" },
+      { "character": "s", "letterSpacing": "-0.05em" },
       " ",
-      { "character": "F", "letterSpacing": "-0.06em" },
-      { "character": "r", "letterSpacing": "-0.01em" },
-      { "character": "i", "letterSpacing": "-0.05em" },
+      { "character": "M", "letterSpacing": "-0.06em" },
+      { "character": "o", "letterSpacing": "-0.01em" },
+      { "character": "n", "letterSpacing": "-0.05em" },
       { "character": "e", "letterSpacing": "-0.05em" },
-      { "character": "n", "letterSpacing": "-0.07em" },
-      "d"
+      { "character": "y", "letterSpacing": "-0.07em" }
     ],
-    "label": "Software Engineer",
-    "picture": "https://secure.gravatar.com/avatar/cd23f74a33fc7d8dfe081948696551a5?s=800&d=robohash",
-    "email": "hello@nathanfriend.io",
-    "website": "https://nathanfriend.io",
-    "summary": "Senior Frontend Engineer at GitLab and cellist based out of Woodstock, Ontario. Fascinated with building usable, delightful software. Remote work advocate.",
+    "label": "Web Application Developer",
+    "picture": "https://secure.gravatar.com/avatar/062b286db123cfc4e1e0e65812bb00e1?s=100&d=robohash",
+    "email": "ross@rossmoney.me",
+    "website": "https://www.rossmoney.me",
+    "summary": "A highly resourceful, innovative and competent BSc Computing Professional with over five years of industry experience in web development, using PHP frameworks such as Laravel, CakePHP and on the frontend Vue.js, and a bit of React. I am also starting out as a DevOps Engineer with knowledge of AWS Cloud and Infrastructure as Code tools such as Ansible and Terraform, CI/CD and Golang tooling.",
     "location": {
-      "city": "Woodstock",
-      "countryCode": "CA",
-      "region": "ON"
+      "city": "London",
+      "countryCode": "GB",
+      "region": "UK"
     },
     "profiles": [
       {
-        "network": "GitLab",
-        "username": "nfriend",
-        "url": "https://gitlab.com/nfriend"
-      },
-      {
         "network": "GitHub",
-        "username": "nfriend",
-        "url": "https://github.com/nfriend"
+        "username": "rossmoney",
+        "url": "https://github.com/rossmoney"
       },
       {
         "network": "LinkedIn",
-        "username": "nfriend",
-        "url": "https://www.linkedin.com/in/nfriend/"
-      },
-      {
-        "network": "Stack Overflow",
-        "username": "nathan-friend",
-        "url": "https://stackoverflow.com/cv/nathanfriend"
-      },
-      {
-        "network": "Twitter",
-        "username": "NathanAFriend",
-        "url": "https://twitter.com/NathanAFriend"
+        "username": "rossmoney",
+        "url": "https://www.linkedin.com/in/rossmoney/"
       }
     ]
   },
 
   "work": [
     {
-      "company": "Stripe",
-      "website": "https://stripe.com/",
-      "summary": "I build economic infrastructure for the internet.",
-      "highlights": ["Worked 100% remotely on the Connect team"],
-      "position": "Remote Fullstack Engineer",
-      "startDate": "2021-08-23",
+      "company": "morphsites",
+      "website": "https://www.morphsites.com/",
+      "summary": "All round backend developer, working across new sites written in Laravel to older sites written in plain php, and Statamic sites.",
+      "highlights": [
+        "Backend development across new Laravel projects and legacy PHP/Statamic sites.",
+        "Managed support tickets autonomously via JIRA for various projects.",
+        "Conducted server migrations using Laravel Forge, ensuring seamless functionality.",
+        "Built and maintained Laravel projects, collaborating with senior developers.",
+        "Developed custom Golang terminal tools for project setup automation."
+      ],
+      "position": "Developer",
+      "startDate": "2024-03-11",
       "tags": [
         {
-          "display": "React",
-          "website": "https://reactjs.org/"
+          "display": "PHP",
+          "website": "https://www.php.net/"
         },
         {
-          "display": "Flow",
-          "website": "https://flow.org/"
+          "display": "Laravel",
+          "website": "https://laravel.com/"
         },
         {
-          "display": "Ruby",
-          "website": "https://www.ruby-lang.org/"
+          "display": "Golang",
+          "website": "https://go.dev/"
         },
         {
-          "display": "Rails",
-          "website": "https://rubyonrails.org/"
+          "display": "MySQL",
+          "website": "https://www.mysql.com/"
+        },
+        {
+          "display": "Docker",
+          "website": "https://www.docker.com/"
         }
       ]
     },
     {
-      "company": "GitLab",
-      "website": "https://about.gitlab.com",
-      "summary": "I built features that help people release software more quickly, easily, and effectively.",
+      "company": "Rawnet",
+      "website": "https://rawnet.com",
+      "summary": "Working as DevOps support and PHP developer 50/50.",
       "highlights": [
-        "Implemented high-profile features such as [Let's Encrypt integration](https://docs.gitlab.com/omnibus/settings/ssl.html#lets-encrypt-integration), [merge trains](https://docs.gitlab.com/ee/ci/merge_request_pipelines/pipelines_for_merged_results/merge_trains/), [deploy freezes](https://docs.gitlab.com/ee/user/project/releases/index.html#prevent-unintentional-releases-by-setting-a-deploy-freeze), [DORA 4 metrics](https://about.gitlab.com/releases/2021/01/22/gitlab-13-8-released/#improve-your-devops-maturity-with-deployment-frequency-metrics), and [markdown editor keyboard shortcuts](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/40328)",
-        "Pushed Release vision forward through in-depth technical and business analysis",
-        "Reviewed and guided community contributions",
-        "Maintainer of [gitlab-org/gitlab](https://gitlab.com/gitlab-org/gitlab/)",
-        "Performed technical and behavioral interviews",
-        "Worked 100% remotely"
+        "Provided DevOps support for in-house developers and AWS infrastructure.",
+        "Managed SSL certificate renewals within AWS ACM.",
+        "Assisted developers with local Docker setups, including Makefile commands.",
+        "Acted as a key point of contact for AWS-related queries and support.",
+        "Implemented security measures such as IP blocking via AWS Web Application Firewall.",
+        "Maintained uptime monitoring and server resilience reporting.",
+        "Developed and maintained custom Golang developer tooling.",
+        "Managed patch installations on Ubuntu Servers using Canonical Landscape.",
+        "Developed PHP code for Concrete5 CMS."
       ],
-      "position": "Senior Frontend Engineer",
-      "startDate": "2018-12-10",
-      "endDate": "2021-08-20",
+      "position": "PHP Developer (DevOps)",
+      "startDate": "2021-10-01",
+      "endDate": "2024-02-20",
       "tags": [
         {
-          "display": "Vue.js",
-          "website": "https://vuejs.org/"
+          "display": "Ansible",
+          "website": "https://docs.ansible.com/ansible/latest/index.html"
         },
         {
-          "display": "JavaScript",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          "display": "Terraform",
+          "website": "https://www.terraform.io/"
         },
         {
           "display": "SCSS",
           "website": "https://sass-lang.com/"
-        },
-        {
-          "display": "Haml",
-          "website": "https://github.com/haml/haml"
-        },
-        {
-          "display": "Ruby",
-          "website": "https://www.ruby-lang.org/"
         },
         {
           "display": "GraphQL",
@@ -125,188 +113,128 @@
         {
           "display": "Go",
           "website": "https://golang.org/"
-        }
-      ]
-    },
-    {
-      "company": "DeltaWare",
-      "website": "https://maximuscanada.ca/locations",
-      "summary": "I led efforts to rebuild legacy healthcare software as modern web applications with an emphasis on usability.",
-      "highlights": [
-        "Led AngularJS to Angular 2+ conversion",
-        "Implemented fast, intuitive searching using Solr"
-      ],
-      "position": "Project Architect",
-      "startDate": "2016-08-03",
-      "endDate": "2018-12-05",
-      "tags": [
-        {
-          "display": "Angular",
-          "website": "https://angular.io/"
-        },
-        {
-          "display": "TypeScript",
-          "website": "https://www.typescriptlang.org/"
-        },
-        {
-          "display": "Solr",
-          "website": "https://lucene.apache.org/solr/"
-        },
-        {
-          "display": "Node",
-          "website": "https://nodejs.org/"
-        },
-        {
-          "display": "ASP.NET",
-          "website": "https://www.asp.net/"
-        },
-        {
-          "display": "Oracle",
-          "website": "https://www.oracle.com/"
-        }
-      ]
-    },
-    {
-      "company": "DuPont Pioneer",
-      "website": "https://www.pioneer.com/us",
-      "summary": "I worked on a fertilizer optimization SaaS for farmers.",
-      "highlights": [
-        "Built mapping features using Leaflet and Bing Maps",
-        "Rebuilt Gulp builds to maximize developer efficiency"
-      ],
-      "position": "Software Development Specialist",
-      "startDate": "2013-05-20",
-      "endDate": "2016-07-20",
-      "tags": [
-        {
-          "display": "Angular",
-          "website": "https://angular.io/"
-        },
-        {
-          "display": "Knockout",
-          "website": "https://knockoutjs.com/"
-        },
-        {
-          "display": "TypeScript",
-          "website": "https://www.typescriptlang.org/"
-        },
-        {
-          "display": "ASP.NET",
-          "website": "https://www.asp.net/"
-        },
-        {
-          "display": "WPF",
-          "website": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
-        },
-        {
-          "display": "C♯",
-          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-        }
-      ]
-    },
-    {
-      "company": "Visual Logic Group",
-      "website": "https://vlgux.com/",
-      "summary": "",
-      "position": "UX Development Intern",
-      "startDate": "2013-01-15",
-      "endDate": "2013-05-01",
-      "type": "internship",
-      "tags": [
-        {
-          "display": "JavaScript",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-        },
-        {
-          "display": "CSS",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-        }
-      ]
-    },
-    {
-      "company": "Dordt University",
-      "website": "https://www.dordt.edu/",
-      "summary": "",
-      "position": "Web Developer",
-      "startDate": "2012-01-20",
-      "endDate": "2013-05-10",
-      "type": "parttime",
-      "tags": [
-        {
-          "display": "Perl",
-          "website": "https://www.perl.org/"
         },
         {
           "display": "PHP",
           "website": "https://www.php.net/"
         },
         {
-          "display": "Drupal",
-          "website": "https://www.drupal.org/"
+          "display": "MySQL",
+          "website": "https://www.mysql.com/"
+        },
+        {
+          "display": "Docker",
+          "website": "https://www.docker.com/"
+        },
+        {
+          "display": "Gitlab",
+          "website": "https://gitlab.com/"
         }
       ]
     },
     {
-      "company": "DuPont Pioneer",
-      "website": "https://www.pioneer.com/us",
-      "summary": "",
-      "position": "Software Development Intern",
-      "startDate": "2012-05-20",
-      "endDate": "2012-08-05",
-      "type": "internship",
+      "company": "Project Better Energy",
+      "website": "https://www.projectbetterenergy.com/",
+      "summary": "Worked in a team of four developers and a QA tester, using Git for version control.",
+      "highlights": [
+        "CakePHP (3) : AMS Appointment Management System (CRM) utilizing connections with MSSQL server.",
+        "Full Stack dev undertaken using vue.js and tailwind / bootstrap.",
+        "Developed and maintained Laravel applications supporting various business functions.",
+        "Built step-by-step Vue.js wizards for finance integrations in sales applications.",
+        "Created and owned a stockist listing feature for EV chargers, integrated into a front-end map."
+      ],
+      "position": "Developer",
+      "startDate": "2018-04-03",
+      "endDate": "2021-09-05",
       "tags": [
         {
-          "display": "JavaScript",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          "display": "Vue.js",
+          "website": "https://vuejs.org/"
         },
+        {
+          "display": "PHP",
+          "website": "https://www.php.net/"
+        },
+        {
+          "display": "MySQL",
+          "website": "https://www.mysql.com/"
+        }
+      ]
+    },
+    {
+      "company": "Regit",
+      "website": "https://regit.cars",
+      "summary": "Team of 6 developers utilizing the agile philosophy with Pivotal task tracker.",
+      "highlights": [
+        "Developed Laravel and Vue.js-based software for an in-house call center, improving lead tracking and sales efficiency.",
+        "Built new features for the Regit website rebrand, utilizing vehicle API data to enhance user experience."
+      ],
+      "position": "Web Developer",
+      "startDate": "2016-09-20",
+      "endDate": "2018-04-20",
+      "tags": [
         {
           "display": "jQuery",
           "website": "https://jquery.com/"
         },
         {
-          "display": "ASP.NET",
-          "website": "https://www.asp.net/"
+          "display": "PHP",
+          "website": "https://www.php.net/"
         },
         {
-          "display": "C♯",
-          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
+          "display": "Laravel",
+          "website": "https://laravel.com/"
+        },
+        {
+          "display": "MySQL",
+          "website": "https://www.mysql.com/"
+        },
+        {
+          "display": "Twilio",
+          "website": "https://www.twilio.com/"
         }
       ]
     },
     {
-      "company": "SnupNow",
-      "summary": "",
-      "position": "Web Development Intern",
-      "startDate": "2011-04-15",
-      "endDate": "2011-08-05",
+      "company" : "Fusepump Ltd.",
+      "position" : "LAMP PHP Developer",
+      "startDate" : "2014-01-01",
+      "endDate" : "2015-11-01",
+      "summary" : "",
+      "highlights" : [
+        "Developed affiliate marketing solutions to drive client sales.",
+        "Worked in an Agile environment using JIRA for project management.",
+        "Used Linux command line for web scraping framework testing.",
+        "Developed internal admin tools using Zend Framework."
+      ]
+    },
+    {
+      "company": "Travelling",
+      "website": "",
+      "summary": "Travel around Asia with a focus on the SE Asian countries, Korea and Japan.",
+      "position": "Career Break",
+      "startDate": "2015-12-20",
+      "endDate": "2016-08-05",
       "type": "internship",
       "tags": [
-        {
-          "display": "HTML",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-        },
-        {
-          "display": "CSS",
-          "website": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-        }
       ]
     }
   ],
   "education": [
     {
-      "institution": "Iowa State University",
-      "website": "https://www.iastate.edu/",
-      "startDate": "2015-08-01",
-      "endDate": "2019-08-15",
-      "area": "Human-Computer Interaction",
-      "studyType": "Master"
+      "institution": "Churston Ferrers Grammar School",
+      "website": "https://churstongrammar.com/",
+      "startDate": "2003-08-01",
+      "endDate": "2010-06-15",
+      "area": "Geography, Chemistry, IT; AS: Maths",
+      "studyType": "A-Levels"
     },
     {
-      "institution": "Dordt University",
-      "website": "https://www.dordt.edu/",
-      "startDate": "2009-08-01",
-      "endDate": "2013-05-10",
-      "area": "Computer Science",
+      "institution": "University of Plymouth",
+      "website": "https://www.plymouth.ac.uk/",
+      "startDate": "2010-08-01",
+      "endDate": "2013-06-10",
+      "area": "Computing",
       "studyType": "Bachelor"
     }
   ],
@@ -323,16 +251,12 @@
           "website": "https://www.typescriptlang.org/"
         },
         {
-          "display": "Dart",
-          "website": "https://dart.dev/"
+          "display": "Golang",
+          "website": "https://go.dev/"
         },
         {
-          "display": "C♯",
-          "website": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"
-        },
-        {
-          "display": "Ruby",
-          "website": "https://www.ruby-lang.org/en/"
+          "display": "PHP",
+          "website": "https://www.php.net/"
         },
         {
           "display": "SCSS",
@@ -348,50 +272,38 @@
       "name": "Frameworks",
       "keywords": [
         {
+          "display": "Laravel",
+          "website": "https://laravel.com/"
+        },
+        {
           "display": "Vue.js",
           "website": "https://vuejs.org/"
         },
         {
-          "display": "Angular",
-          "website": "https://angular.io/"
+          "display": "Nuxt.js",
+          "website": "https://nuxt.com/"
         },
         {
-          "display": "React",
-          "website": "https://reactjs.org/"
-        },
-        {
-          "display": "Flutter",
-          "website": "https://flutter.dev/"
-        },
-        {
-          "display": "Rails",
-          "website": "https://rubyonrails.org/"
-        },
-        {
-          "display": "ASP.NET",
-          "website": "https://www.asp.net/"
-        },
-        {
-          "display": "WPF",
-          "website": "https://en.wikipedia.org/wiki/Windows_Presentation_Foundation"
+          "display": "Bootstrap",
+          "website": "https://getbootstrap.com/"
         }
       ]
     },
     {
       "name": "Concepts",
       "keywords": [
+        "AGILE working / philosophy",
         "Continuous integration/deployment (CI/CD)",
-        "Automated testing",
-        "REST/GraphQL API design",
+        "REST API design",
+        "BDD/ TDD",
         "Cross-browser debugging",
         "Responsive design",
-        "Developer workflow optimization",
-        "Single Page Applications (SPAs)",
-        "Internationalization (i18n)"
+        "Developer workflow optimization"
       ]
     }
   ],
   "meta": {
-    "theme": "flat"
+    "theme": "flat",
+    "version": "v1.0.0"
   }
 }

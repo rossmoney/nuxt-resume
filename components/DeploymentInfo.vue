@@ -5,10 +5,7 @@
       <a :href="commitLink">{{ commitSha }}</a>
     </span>
     <span v-else class="mr-2">Running locally</span>
-    <a
-      class="mr-2"
-      href="https://gitlab.com/nfriend/nuxt-resume/pipelines/latest"
-    >
+    <a class="mr-2" href="https://github.com/rossmoney/nuxt-resume/actions">
       <img
         class="inline h-5 -mt-1"
         :src="pipelineStatusUrl"
@@ -16,11 +13,11 @@
       />
     </a>
     <a
-      href="https://gitlab.com/nfriend/nuxt-resume"
+      href="https://github.com/rossmoney/nuxt-resume"
       class="inline-flex items-center"
     >
-      View the source on GitLab
-      <Icon class="ml-1" type="gitlab" />
+      View the source on GitHub
+      <Icon class="ml-1" type="github" />
     </a>
   </div>
 </template>
@@ -36,18 +33,18 @@ export default {
   }),
   created() {
     this.isProduction = process.env.isProduction;
-    this.deployedTimestamp = moment(process.env.gitlabCi.timestamp)
+    this.deployedTimestamp = moment(process.env.GITHUB_RUN_TIMESTAMP)
       .utc()
       .format('Y/MM/DD \\a\\t HH:mm:ss z');
-    this.commitSha = process.env.gitlabCi.commitSha;
-    this.commitLink = `${process.env.gitlabCi.projectUrl}/commit/${this.commitSha}`;
+    this.commitSha = process.env.GITHUB_SHA;
+    this.commitLink = `https://github.com/${process.env.GITHUB_REPOSITORY}/commit/${this.commitSha}`;
 
     setInterval(this.refreshPipelineStatus, 5000);
     this.refreshPipelineStatus();
   },
   methods: {
     refreshPipelineStatus() {
-      this.pipelineStatusUrl = `https://gitlab.com/nfriend/nuxt-resume/badges/master/pipeline.svg#${Date.now()}`;
+      this.pipelineStatusUrl = `https://github.com/rossmoney/nuxt-resume/actions/workflows/CI.yml/badge.svg?branch=master&${Date.now()}`;
     },
   },
 };
