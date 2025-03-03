@@ -1,7 +1,7 @@
 {
   "name": "nuxt-resume",
   "version": "1.0.0",
-  "description": "My résumé, built with NuxtJS and Tailwind CSS",
+  "description": "My CV, built with NuxtJS and Tailwind CSS",
   "author": "Nathan Friend",
   "private": true,
   "scripts": {

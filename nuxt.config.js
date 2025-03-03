@@ -10,14 +10,14 @@ const config = {
     htmlAttrs: {
       lang: 'en',
     },
-    title: 'Ross Money - Résumé',
+    title: 'Ross Money - CV',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: "Ross Money's résumé. Built with NuxtJS and Tailwind CSS.",
+        content: "Ross Money's CV. Built with NuxtJS and Tailwind CSS.",
       },
       {
         property: 'og:type',
@@ -25,11 +25,11 @@ const config = {
       },
       {
         property: 'og:title',
-        content: 'Ross Money - Résumé',
+        content: 'Ross Money - CV',
       },
       {
         property: 'og:description',
-        content: "Ross Money's résumé. Built with NuxtJS and Tailwind CSS.",
+        content: "Ross Money's CV. Built with NuxtJS and Tailwind CSS.",
       },
       // {
       //  property: 'og:image',
