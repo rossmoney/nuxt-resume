@@ -31,10 +31,10 @@ const config = {
         property: 'og:description',
         content: "Ross Money's résumé. Built with NuxtJS and Tailwind CSS.",
       },
-      //{
+      // {
       //  property: 'og:image',
       //  content: 'https://www.rossmoney.me/screenshot.png',
-      //},
+      // },
       {
         property: 'og:image:type',
         content: 'image/png',
@@ -140,8 +140,8 @@ const config = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
-    },
-    env: {
+  },
+  env: {
     isProduction: Boolean(process.env.GITHUB_ACTIONS),
     githubActions: {
       timestamp: new Date().toISOString(),
